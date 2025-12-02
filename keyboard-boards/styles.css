@@ -336,6 +336,16 @@ nav a:hover::after {
   padding: 24px;
 }
 
+.covers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .card {
   background: var(--color-surface-soft);
   width: 260px;
