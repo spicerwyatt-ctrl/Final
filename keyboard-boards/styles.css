@@ -363,6 +363,4 @@ nav a:hover::after {
   transition: 0.3s ease;
 }
 
-.cover-img:hover {
-  filter: saturate(1.25) brightness(1.05) contrast(1.02);
-}
+
