@@ -328,14 +328,12 @@ nav a:hover::after {
   }
 }
 
-.covers-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 20px;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+.covers {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 24px;
 }
 
 .card {
