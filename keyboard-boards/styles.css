@@ -328,14 +328,6 @@ nav a:hover::after {
   }
 }
 
-.covers {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-  padding: 24px;
-}
-
 .covers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
