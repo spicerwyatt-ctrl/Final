@@ -468,12 +468,19 @@ nav a:hover::after {
 }
 
 @keyframes heroFade {
-  0%   { opacity: 0; }
-  45%  { opacity: 1; }
-  55%  { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 .hero-text{
   max-width: 900px;
   margin: 0 auto 30px;
