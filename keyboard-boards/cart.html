@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>The Keyboard Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Covers</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="cart.html">Cart</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero-text">
+  <h1 id="logo">Your Cart</h1>
+  <h2>Curated performances. Minimal aesthetic. Maximum class.</h2>
+  <p class="hero-description">
+    The cart shows the items you've selected, along with their price and basic details. You can adjust quantities, remove items, and quickly see what you're about to purchase before checkout. It's designed to be clear and straightforward, so you always know exactly what's in your cart and how much it costs.
+  </p>
+</section>
+
+<div class="cart-layout">
+  <div class="cart-items">
+    <div class="cart-item">
+      <img src="images/walnut.jpg" alt="Walnut Cover" class="cart-thumb" />
+      <div class="cart-info">
+        <h3 class="cart-title">Walnut Cover</h3>
+        <p class="cart-meta">Finish: Satin • Size: 61-key</p>
+
+        <div class="cart-controls">
+          <input class="qty-text" type="text" value="1" />
+          <button class="remove-btn" type="button">Remove</button>
+        </div>
+      </div>
+
+      <div class="cart-price">$129</div>
+    </div>
+
+    <div class="cart-item">
+      <img src="images/redwood.jpg" alt="Redwood Cover" class="cart-thumb" />
+      <div class="cart-info">
+        <h3 class="cart-title">Redwood Cover</h3>
+        <p class="cart-meta">Finish: Matte • Size: 88-key</p>
+        <div class="cart-controls">
+          <input class="qty-text" type="text" value="1" />
+          <button class="remove-btn" type="button">Remove</button>
+        </div>
+      </div>
+      <div class="cart-price">$159</div>
+    </div>
+  </div>
+
+  <aside class="cart-summary">
+    <h3 class="summary-title">Order Summary</h3>
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <span>$288</span>
+    </div>
+    <div class="summary-row">
+      <span>Shipping</span>
+      <span>$12</span>
+    </div>
+    <div class="summary-row total">
+      <span>Total</span>
+      <span>$300</span>
+    </div>
+    <button class="btn checkout-btn" type="button">Checkout</button>
+    <p class="summary-note">Taxes calculated at checkout.</p>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <p>
+    Contact: support@keyboardboard.com • 1-800-555-5555
+  </p>
+  <p>
+    © 2025 The Keyboard Board
+  </p>
+  <p>
+    Created by Wyatt Spicer - University of Texas at Dallas<br>
+    Arts, Technology, and Emerging Communication
+  </p>
+</footer>
+</body>
+</html>
 
