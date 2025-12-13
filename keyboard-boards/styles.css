@@ -47,6 +47,105 @@ table {
   src: url('fonts/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+html {font-size: 16px;}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: false;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: true;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 3.05em;
+}
+
+h2,
+.text-size-h2 { font-size: 2.44em; }
+
+h3,
+.text-size-h3 { font-size: 1.95em; }
+
+h4,
+.text-size-h4 { font-size: 1.56em; }
+
+h5,
+.text-size-h5 { font-size: 1.25em; }
+
+.text-caption { font-size: 0.8em; }
+
+small,
+.text-small {
+  font-size: 0.64em;
+}
+
+
+html {font-size: 16px;}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: false;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: true;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 3.05em;
+}
+
+h2,
+.text-size-h2 { font-size: 2.44em; }
+
+h3,
+.text-size-h3 { font-size: 1.95em; }
+
+h4,
+.text-size-h4 { font-size: 1.56em; }
+
+h5,
+.text-size-h5 { font-size: 1.25em; }
+
+.text-caption { font-size: 0.8em; }
+
+small,
+.text-small {
+  font-size: 0.64em;
+}
+              
 
 html {
   background-color: #FAF6F1;
@@ -55,17 +154,18 @@ html {
 body {
   background-color: #FAF6F1;
   color: #2F2A26;
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
   max-width: 900px;
   margin: 24px auto;
   padding: 18px 22px 28px;
   border-radius: 18px;
   border: 1px solid #E1D4C2;
   box-shadow: 0 14px 40px rgba(15, 10, 6, 0.08);
+  text-align: center;
 }
 
 p, ul, ol {
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
   font-size: 0.98rem;
   color: #2F2A26;
   margin-bottom: 0.75rem;
@@ -225,7 +325,7 @@ nav {
 }
 
 nav a {
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -273,7 +373,7 @@ nav a:hover::after {
   display: inline-block;
   padding: 9px 18px;
   margin-top: 6px;
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -372,4 +472,210 @@ nav a:hover::after {
   45%  { opacity: 1; }
   55%  { opacity: 1; }
   100% { opacity: 0; }
+}
+
+.hero-text{
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 34px 44px 40px;
+  border-radius: 18px;
+  background: #F7EFE6;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 12px 30px rgba(15,10,6,0.08);
+  box-sizing: border-box;
+}
+
+.hero-text h1,
+.hero-text #logo{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-text h2{
+  border: none !important;
+  padding: 0 !important;
+}
+
+.hero-description{
+  max-width: 620px;
+  margin: 14px auto 0;
+  line-height: 1.65;
+}
+
+.cart-page{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cart-layout{
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 18px;
+}
+
+.cart-items{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cart-item{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #F7EFE6;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 10px 24px rgba(15,10,6,0.06);
+  box-sizing: border-box;
+}
+
+.cart-thumb{
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(198,166,103,0.35);
+  margin: 0;
+  box-shadow: none;
+}
+
+.cart-info{
+  flex: 1;
+  text-align: left;
+}
+
+.cart-title{
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.cart-meta{
+  margin: 0 0 12px;
+  color: #7A6F67;
+  font-size: 0.9rem;
+}
+
+.cart-controls{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.qty{
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #E1D4C2;
+  border-radius: 999px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.qty-text{
+  width: 56px;
+  height: 34px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  border: 1px solid #E1D4C2;
+  background: #FFFFFF;
+  text-align: center;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  color: #2F2A26;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.qty-text:focus{
+  border-color: #C6A667;
+}
+
+.qty-input{
+  width: 44px;
+  height: 34px;
+  border: 0;
+  text-align: center;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  outline: none;
+}
+
+.remove-btn{
+  border: 0;
+  background: transparent;
+  color: #A3874D;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.cart-price{
+  min-width: 72px;
+  text-align: right;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 1.1rem;
+}
+
+.cart-summary{
+  width: 280px;
+  position: sticky;
+  top: 18px;
+
+  padding: 18px 18px 16px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 12px 28px rgba(15,10,6,0.06);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.summary-title{
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+}
+
+.summary-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid rgba(225,212,194,0.7);
+  font-size: 0.95rem;
+}
+
+.summary-row.total{
+  font-weight: 600;
+}
+
+.checkout-btn{
+  width: 100%;
+  margin-top: 14px;
+}
+
+.summary-note{
+  margin: 10px 0 0;
+  color: #7A6F67;
+  font-size: 0.85rem;
+}
+
+.infomercial{
+  width: 100%;
+  max-width: 900px;
+  margin: 14px auto 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 12px 34px rgba(15,10,6,0.08);
+}
+
+.video-embed iframe{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
 }
