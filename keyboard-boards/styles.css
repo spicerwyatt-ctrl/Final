@@ -1,4 +1,4 @@
-Insert all your glorious CSS styles below! */
+/* Insert all your glorious CSS styles below! */
 /* reset browser styles */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
@@ -27,53 +27,47 @@ ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-} 
-/* end reset browser styles */
+}
+/* end reset browser styles*/
 
-
-/* ===== THEME VARIABLES (easy piano → candle swap) ===== */
-:root {
-  --color-bg: #FAF6F1;            /* eggshell / off-white */
-  --color-surface: #FFFFFF;       /* cards, content blocks */
-  --color-surface-soft: #F7EFE6;  /* subtle panels */
-  --color-text: #2F2A26;          /* deep neutral */
-  --color-text-muted: #7A6F67;
-  --color-accent: #C6A667;        /* soft gold */
-  --color-accent-dark: #A3874D;   /* deeper gold/brown */
-  --color-border: #E1D4C2;
-  --color-shadow: rgba(15, 10, 6, 0.08);
-
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-
-  --font-heading: "Playfair Display", "Times New Roman", serif;
-  --font-body: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+/* space-grotesk-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/space-grotesk-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/playfair-display-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* ========== BASE LAYOUT ========== */
 
 html {
-  background-color: var(--color-bg);
+  background-color: #FAF6F1;
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
+  background-color: #FAF6F1;
+  color: #2F2A26;
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   max-width: 900px;
   margin: 24px auto;
   padding: 18px 22px 28px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 14px 40px var(--color-shadow);
+  border-radius: 18px;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 14px 40px rgba(15, 10, 6, 0.08);
 }
 
-/* Generic text */
 p, ul, ol {
-  font-family: var(--font-body);
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.98rem;
-  color: var(--color-text);
+  color: #2F2A26;
   margin-bottom: 0.75rem;
 }
 
@@ -82,29 +76,27 @@ ul, ol {
 }
 
 a {
-  color: var(--color-accent-dark);
+  color: #A3874D;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--color-accent);
+  color: #C6A667;
 }
 
-/* ========== HEADINGS ========== */
-
 h1 {
-  font-family: var(--font-heading);
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 2.6rem;
   font-weight: 600;
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: #2F2A26;
   padding: 10px 20px 14px;
   margin: 0 -22px 22px -22px;
   background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(250,246,241,0.95));
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #E1D4C2;
   position: relative;
 }
 
@@ -114,14 +106,14 @@ h1::after {
   width: 72px;
   height: 2px;
   margin: 10px auto 0;
-  background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+  background: linear-gradient(to right, transparent, #C6A667, transparent);
 }
 
 h2 {
-  font-family: var(--font-heading);
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: #2F2A26;
   padding: 8px 0 10px;
   margin: 18px 0 8px;
   border-top: 1px solid rgba(198,166,103,0.35);
@@ -129,46 +121,41 @@ h2 {
 }
 
 h3 {
-  font-family: var(--font-heading);
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: #2F2A26;
   margin: 12px 0 6px;
 }
-
-/* ========== IMAGES ========== */
 
 img {
   display: block;
   margin: 14px auto;
   max-width: 100%;
   height: auto;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 10px 26px var(--color-shadow);
+  border-radius: 12px;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 10px 26px rgba(15, 10, 6, 0.08);
 }
-
-/* ========== LAYOUT BLOCKS ========== */
 
 article {
   max-width: 900px;
   margin: 0 auto 26px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  background: var(--color-surface-soft);
+  border-radius: 12px;
+  border: 1px solid #E1D4C2;
+  background: #F7EFE6;
   padding: 18px 20px 20px;
 }
 
-/* Right-side panel (for tracklist OR candle details) */
 .sidebar {
   width: 30%;
   float: right;
   margin: 12px 0 12px 18px;
-  background-color: var(--color-surface);
+  background-color: #FFFFFF;
   padding: 14px 18px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 10px 25px var(--color-shadow);
+  border-radius: 12px;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 10px 25px rgba(15, 10, 6, 0.08);
 }
 
 .sidebar h2 {
@@ -180,46 +167,42 @@ article {
 
 .sidebar p, .sidebar ul {
   font-size: 0.9rem;
-  color: var(--color-text-muted);
+  color: #7A6F67;
 }
 
-/* Highlighted note block (works for “about this piece” OR “candle notes”) */
 .note {
-  border-radius: var(--radius-md);
+  border-radius: 12px;
   border: 1px solid rgba(198,166,103,0.5);
   background: radial-gradient(circle at top left, #FFF9F3 0%, #F4E5D2 45%, #F7EFE6 100%);
   padding: 18px 20px;
   margin: 22px 0 30px;
-  color: var(--color-text);
+  color: #2F2A26;
   font-size: 0.95rem;
 }
 
 .note strong {
-  color: var(--color-accent-dark);
+  color: #A3874D;
 }
 
-/* Clear floats if you use .sidebar */
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* ========== TOP LOGO / WORDMARK ========== */
-
 #logo {
-  font-family: var(--font-heading);
+  font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 2.4rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
-  color: var(--color-text);
+  color: #2F2A26;
   margin: 0 -22px 18px;
   padding: 14px 20px 16px;
   background-color: #FDF7F0;
-  border-radius: 0 0 var(--radius-md) var(--radius-md);
-  border-bottom: 1px solid var(--color-border);
+  border-radius: 0 0 12px 12px;
+  border-bottom: 1px solid #E1D4C2;
   position: relative;
   animation: fadeDown 0.9s ease-out 1 forwards;
 }
@@ -229,10 +212,8 @@ article {
   position: absolute;
   inset: auto 18% -2px 18%;
   height: 2px;
-  background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+  background: linear-gradient(to right, transparent, #C6A667, transparent);
 }
-
-/* ========== NAVIGATION ========== */
 
 nav {
   display: flex;
@@ -244,12 +225,12 @@ nav {
 }
 
 nav a {
-  font-family: var(--font-body);
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--color-text);
+  color: #2F2A26;
   padding: 6px 2px;
   position: relative;
   transition: color 0.3s ease;
@@ -262,26 +243,24 @@ nav a::after {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--color-accent);
+  background-color: #C6A667;
   transition: width 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--color-accent-dark);
+  color: #A3874D;
 }
 
 nav a:hover::after {
   width: 100%;
 }
 
-/* ========== FOOTER ========== */
-
 .site-footer {
   margin-top: 26px;
   padding: 16px 20px 10px;
   background: #F3E5D5;
-  color: var(--color-text-muted);
-  border-radius: var(--radius-md);
+  color: #7A6F67;
+  border-radius: 12px;
   border-top: 1px solid rgba(198,166,103,0.4);
   font-size: 0.85rem;
 }
@@ -290,32 +269,28 @@ nav a:hover::after {
   margin-bottom: 6px;
 }
 
-/* ========== OPTIONAL BUTTON STYLE (for “Play” OR “Shop Now”) ========== */
-
 .btn {
   display: inline-block;
   padding: 9px 18px;
   margin-top: 6px;
-  font-family: var(--font-body);
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   border-radius: 999px;
-  border: 1px solid var(--color-accent);
+  border: 1px solid #C6A667;
   background: transparent;
-  color: var(--color-accent-dark);
+  color: #A3874D;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background: linear-gradient(to bottom, var(--color-accent), var(--color-accent-dark));
+  background: linear-gradient(to bottom, #C6A667, #A3874D);
   color: #FFF;
   box-shadow: 0 8px 18px rgba(15,10,6,0.18);
   transform: translateY(-1px);
 }
-
-/* ========== ANIMATIONS ========== */
 
 @keyframes fadeDown {
   from {
@@ -337,19 +312,19 @@ nav a:hover::after {
 }
 
 .card {
-  background: var(--color-surface-soft);
+  background: #F7EFE6;
   width: 260px;
   padding: 18px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 12px 30px var(--color-shadow);
+  border-radius: 12px;
+  border: 1px solid #E1D4C2;
+  box-shadow: 0 12px 30px rgba(15, 10, 6, 0.08);
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 36px var(--color-shadow);
+  box-shadow: 0 16px 36px rgba(15, 10, 6, 0.08);
 }
 
 .cover-img {
@@ -369,9 +344,9 @@ nav a:hover::after {
   max-width: 900px;
   height: 340px;
   margin: 0 auto 22px;
-  border-radius: var(--radius-lg);
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 34px var(--color-shadow);
+  box-shadow: 0 12px 34px rgba(15, 10, 6, 0.08);
 }
 
 .hero .fade-img {
@@ -398,5 +373,3 @@ nav a:hover::after {
   55%  { opacity: 1; }
   100% { opacity: 0; }
 }
-
-
